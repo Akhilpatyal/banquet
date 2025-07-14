@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Libs -->
+  <link rel="stylesheet" href="assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/fonts/wedding-icon-font/flaticon.css">
+  <link rel="stylesheet" href="assets/fonts/fontello/css/fontello.css">
+
+  <link rel="shortcut icon" href="assets/images/logo/logo1.png" type="image/x-icon">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- CSS for all Flaticon UIcons -->
+  <link href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.css">
+
+  <script src="https://kit.fontawesome.com/7bd032c7ab.js" crossorigin="anonymous"></script>
+
+  <!-- fancy box -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>CategoryDetail Page - Banquet</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+  </style>
+
+  <style>
+    .cont {
+      display: grid;
+      place-items: center;
+      min-height: 180px;
+      -webkit-mask-box-image: -webkit-linear-gradient(top, transparent, transparent 0, white 10%, white 80%, transparent 100%);
+    }
+
+
+    .cards {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card-text {
+      background-color: blue;
+    }
+
+    .cards .card {
+
+      position: absolute;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 10px;
+      padding: 1.5rem;
+      opacity: 0;
+      background: #fff;
+      max-width: 30rem;
+      border-radius: 0.5rem;
+      pointer-events: none;
+      animation: slideUp 15s infinite;
+    }
+
+    .cards .card:nth-child(1) {
+      animation-delay: -3s;
+    }
+
+    .cards .card:nth-child(2) {
+      animation-delay: 0s;
+    }
+
+    .cards .card:nth-child(3) {
+      animation-delay: 3s;
+    }
+
+    .cards .card:nth-child(4) {
+      animation-delay: 6s;
+    }
+
+    .cards .card:nth-child(5) {
+      animation-delay: 9s;
+    }
+
+    .cards .card:nth-child(6) {
+      animation-delay: 12s;
+    }
+
+    .cards .card:nth-child(7) {
+      animation-delay: 15s;
+    }
+
+    .cards .card:nth-child(8) {
+      animation-delay: 18s;
+    }
+
+    .cards .card:nth-child(9) {
+      animation-delay: 21s;
+    }
+
+    .cards .card:nth-child(10) {
+      animation-delay: 24s;
+    }
+
+    .cards .card:nth-child(11) {
+      animation-delay: 27s;
+    }
+
+    .cards .card:nth-child(12) {
+      animation-delay: 30s;
+    }
+
+    .cards .card:nth-child(13) {
+      animation-delay: 33s;
+      /* Repeat from 1 after the 10th card */
+    }
+
+    .cards .card:nth-child(14) {
+      animation-delay: 36s;
+      /* Repeat from 2 after the 11th card */
+    }
+
+    /* Continue this pattern for more cards */
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(100%) scale(0.5);
+        opacity: 0;
+      }
+
+      5%,
+      20% {
+        transform: translateY(100%) scale(0.7);
+        opacity: 0.4;
+      }
+
+      25%,
+      40% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+
+      45%,
+      60% {
+        transform: translateY(-100%) scale(0.7);
+        opacity: 0.4;
+      }
+
+      65%,
+      100% {
+        transform: translateY(-100%) scale(0.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="mouse-follower">
+    <span class="cursor-outline"></span>
+    <span class="cursor-dot"></span>
+  </div>
+
+  <!-- navbar -->
+  <div class="navbar-transparent navbar-position">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand Cinzel-f" href="index.html">
+
+              <span style="color: #FB8500;">Ban</span>Quet
+
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto ms-auto content__item">
+                <li class="nav-item dropdown ">
+                  <a class="nav-link  link link--metis" href="index.html" id="navbarHome">
+                    Home
+                  </a>
+
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="venues.html" id="navbarListing">
+                    Venues
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="vendors.html" id="navbarListing">
+                    Vendor
+                  </a>
+                </li>
+
+
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="gallery.html" aria-expanded="false">
+                    Gallery
+                  </a>
+
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="realWedding.html" aria-expanded="false">
+                    Real Wedding
+                  </a>
+
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link link link--metis" href="blog.html" id="blogDropdown" role="button">
+                    Blog
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="about.html" aria-expanded="false">
+                    About us
+                  </a>
+
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="contact.html" aria-expanded="false">
+                    Contact
+                  </a>
+
+                </li>
+              </ul>
+              <div class="p-3 p-lg-0 text-center">
+
+                <!-- <a href="pages/signin.html" class="btn btn-secondary shadow-sm">Sign in</a> -->
+                <a href="#" class="btn btn2 style1 rounded">Get Started Now</a>
+
+
+
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+
+    <section class="flex-display pt-lg-21 pt-10 overlay-section-3 position-relative jarallax" data-jarallax
+      data-speed="0.5">
+      <div class="jarallax-img" style="background-image: url('assets/images/category-detailPage-image/banner1.png');">
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center pb-lg-17 pb-5">
+          <!-- hero captions -->
+          <div class="col-lg-9 col-md-12">
+            <div class="text-white text-center">
+              <h1 class="display-3 fw-bold text-white Cinzel-f" id="heading">Banddha Films</h1>
+              <p class="lead mb-0 parata-f">Experience Royal Elegance in the Heart of the City</p>
+            </div>
+            <div class="text-white text-center pt-2">
+
+              <p>Home / Photographer</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us Start -->
+    <section class="Photographer-section-2 section-bg-4 fix">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="Photographer-mentor d-none d-sm-block">
+              <div class="Photographer-img wow fadeInLeft" data-wow-delay=".1s">
+                <img src="assets/images/01.jpg" alt="Photographer-img" class="d-none d-sm-block">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-8">
+            <div class="Photographer-wrapper" style="background-color: #F7E7CE;">
+              <div class="section-title">
+                <span class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">About us</span>
+                <h2 class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">We Inspire You To Bring Your Wedding In Real Life</h2>
+                <p class="wow fadeInUp" data-wow-delay=".1s">
+                  The Banyan Retreat is a famous and reputed wedding venue located in Ramnagar, Jim Corbett. This
+                  magnificent venue offers both indoor and outdoor spacing facilities for guests that can accommodate
+                  large gatherings. Rooms are also available for the outstation guests to stay and get ready. The venue
+                  has been hosting several events since 2019 and developed a firm name in the industry. The team is also
+                  talented and skilled in providing a wide range of services for all guests.
+                </p>
+              </div>
+              <div class="Photographer-inner wow fadeInUp" data-wow-delay=".3s">
+                <div class="Profession-Photographer">
+                  <div class="icon wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                    <img src="assets/images/icon/icon6.svg" alt="icon">
+                  </div>
+                  <div class="content mt-5">
+                    <h3>Creative & Profession Editing</h3>
+                    <p>There are many variations of passag<br>alteration in some form,
+                    </p>
+                  </div>
+                </div>
+                <div class="Profession-Photographer">
+                  <div class="icon wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                    <img src="assets/images/icon/icon7.svg" alt="icon">
+                  </div>
+                  <div class="content mt-5">
+                    <h3>Creative & Profession Editing</h3>
+                    <p>There are many variations of passag<br>alteration in some form,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Photographer Section End -->
+
+    <!--Why US?-->
+    <section class="about-two">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="about-two__left">
+              <div class="section-title text-left">
+                <span class="section-title__tagline parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Why Choose The Imperial?</span>
+                <h2 class="section-title__title">We Make Difference in Your Homes</h2>
+                <div class="section-title__line"></div>
+              </div>
+              <p class="about-two__text-1">We have 30+ years of experiences for give
+                you better quality results.</p>
+              <p class="about-two__text-2">Lorem ipsum dolor sit amet, consectetur notted adipisicing elit
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lonm andhn.</p>
+              <div class="about-two__points-box">
+                <div class="about-two__points-left">
+                  <ul class="list-unstyled about-two__points">
+                    <li>
+                      <div class="icon">
+                        <span class="icon-confirmation"></span>
+                      </div>
+                      <div class="text">
+                        <p>Quality Material</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <p class="about-two__points-text">Lorem ipsum dolor sit ame ed <br> consectetur nod.
+                  </p>
+                </div>
+                <div class="about-two__points-right">
+                  <ul class="list-unstyled about-two__points">
+                    <li>
+                      <div class="icon">
+                        <span class="icon-confirmation"></span>
+                      </div>
+                      <div class="text">
+                        <p>Unique Walls</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <p class="about-two__points-text">Lorem ipsum dolor sit ame ed <br> consectetur nod.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="about-two__right">
+              <div class="about-two__img-box wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                <div class="about-two__img-1 wow animate__animated animate__zoomIn" data-wow-delay="0.3s" data-wow-duration="1s">
+                  <img src="assets/images/about-two-img-1.jpg" alt="">
+                </div>
+                <div class="about-two__img-2 wow animate__animated animate__zoomIn" data-wow-delay="0.3s" data-wow-duration="1s">
+                  <img src="assets/images/about-two-img-2.jpg" alt="">
+                </div>
+                <div class="about-two__dot">
+                  <img src="assets/images/about-two-dots.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About Two End-->
+
+
+    <!--Leading Start-->
+    <section class="leading">
+      <div class="leading-bg-box">
+        <div class="leading-bg jarallax " data-jarallax data-speed="0.2" data-imgPosition="50% 0%">
+          <img class="jarallax-img  " src="./assets/images/banner/ring.png" alt="">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 col-lg-6">
+            <div class="leading__left">
+
+              <h3 class="leading__title wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s"> Services <br>Offered by <br>Us.</h3>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6">
+            <div class="leading__right">
+              <ul class="list-unstyled leading__points">
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>We’re expert & certified designers</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>We use only quality materials</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>We care about our customers</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>Smart & unique wall designs</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Leading End-->
+
+
+    <!-- gallery -->
+
+    <section class="service-wrap pb-50 pt-10">
+      <div class="container">
+        <div class="section-title style1 text-center mb-30 center ">
+          <span class="Cinzel-f wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Our Gallery</span>
+          <img src="assets/images/wedding arrow.png" alt="" style="width: 400px; align-self: center;">
+          <h3 class="parata-f">Picture Perfect Moments</h3>
+        </div>
+        <div class="project-slider-one owl-carousel">
+          <div class="projects-one__single ">
+            <div class="projects-one__img-box">
+
+              <div class="galleryImg position-relative projects-one__img">
+
+                <img src="assets/images/cards/card1.png" alt="Zoom Image" class="w-100 rounded-3" />
+
+              </div>
+
+              <div class="projects-one__content">
+                <div class="projects-one__content-shape-1 "
+                  style="background-image: url(assets/images/shapes/projects-one-content-shape-1.png);">
+                </div>
+                <h4 class="projects-one__title">
+                  <a data-fancybox="gallery" href="assets/images/cards/card1.png">Neoclassical Sofa</a>
+                </h4>
+                <p class="projects-one__sub-title">Interior Design</p>
+              </div>
+
+              <div class="projects-one__arrow" style="perspective: 1000px;">
+                <div class=" gsap-magnetic Cinzel-f">
+                  <a data-fancybox="gallery" href="assets/images/cards/card1.png">
+                    <i class="fas fa-arrow-up rotate-45"></i>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+          <div class="projects-one__single ">
+            <div class="projects-one__img-box">
+              <div class="galleryImg position-relative projects-one__img">
+                <a href="assets/images/cards/card2.png" title="Foto 1" class="rounded-3">
+                  <img src="assets/images/cards/card2.png" alt="Foto 1" class="w-100 rounded-3">
+                </a>
+
+              </div>
+              <div class="projects-one__content">
+                <div class="projects-one__content-shape-1"
+                  style="background-image: url(assets/images/shapes/projects-one-content-shape-1.png);">
+                </div>
+                <h4 class="projects-one__title"><a href="">Neoclassical
+                    Sofa</a></h4>
+                <p class="projects-one__sub-title">Interior Design</p>
+              </div>
+              <div class="projects-one__arrow" style="perspective: 1000px;">
+                <div class=" gsap-magnetic Cinzel-f">
+                  <a data-fancybox="gallery" href="assets/images/cards/card2.png">
+                    <i class="fas fa-arrow-up rotate-45"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="projects-one__single ">
+            <div class="projects-one__img-box">
+              <div class="galleryImg position-relative projects-one__img">
+                <a href="assets/images/cards/card3.png" title="Foto 1" class="rounded-3">
+                  <img src="assets/images/cards/card3.png" alt="Foto 1" class="w-100 rounded-3">
+                </a>
+
+              </div>
+              <div class="projects-one__content">
+                <div class="projects-one__content-shape-1"
+                  style="background-image: url(assets/images/shapes/projects-one-content-shape-1.png);">
+                </div>
+                <h4 class="projects-one__title"><a href=" ">Neoclassical
+                    Sofa</a></h4>
+                <p class="projects-one__sub-title">Interior Design</p>
+              </div>
+              <div class="projects-one__arrow" style="perspective: 1000px;">
+                <div class=" gsap-magnetic Cinzel-f">
+                  <a data-fancybox="gallery" href="assets/images/cards/card3.png">
+                    <i class="fas fa-arrow-up rotate-45"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="projects-one__single ">
+            <div class="projects-one__img-box">
+              <div class="galleryImg position-relative projects-one__img">
+                <a href="assets/images/cards/card4.png" title="Foto 1" class="rounded-3">
+                  <img src="assets/images/cards/card4.png" alt="Foto 1" class="w-100 rounded-3">
+                </a>
+
+              </div>
+              <div class="projects-one__content">
+                <div class="projects-one__content-shape-1"
+                  style="background-image: url(assets/images/shapes/projects-one-content-shape-1.png);">
+                </div>
+                <h4 class="projects-one__title"><a href=" ">Neoclassical
+                    Sofa</a></h4>
+                <p class="projects-one__sub-title">Interior Design</p>
+              </div>
+              <div class="projects-one__arrow" style="perspective: 1000px;">
+                <div class=" gsap-magnetic Cinzel-f">
+                  <a data-fancybox="gallery" href="assets/images/cards/card4.png">
+                    <i class="fas fa-arrow-up rotate-45"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>s
+
+    <!-- Projects One End -->
+
+
+    <!--==================================================-->
+    <!--start price area-->
+    <!--==================================================-->
+
+
+
+    <section class="service-wrap pb-100 pt-10">
+      <div class="container">
+        <div class="section-title style1 text-center mb-30 center">
+          <span class="Cinzel-f wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Pricing Plans</span>
+          <img src="assets/images/wedding arrow.png" alt="" style="width: 400px; align-self: center;">
+          <h3 class="parata-f">The Best pricing
+            To help you!</h3>
+        </div>
+        <div class="project-slider-one owl-carousel">
+          <div class="blog-singele-box" data-aos="fade-down">
+            <div class="blog-thumb rounded">
+              <img src="assets/images/cards/card1.png" alt="blog2" class="rounded" />
+
+              <div class="blog-content">
+                <h3 class="blog-title text-light parata-f">Photo Package</h3>
+                <p class="blog-desc">₹30000 per day</p>
+                <div class="blog-btn" style="perspective: 1000px; display: inline-block;">
+                  <a href="" data-bs-toggle="modal"
+                                        data-bs-target="#favouriteIcon">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-meta-title w-100">
+              <h2 class="parata-f text-center text-light ms-auto"><a>Photo Package</a></h2>
+            </div>
+          </div>
+
+          <div class="blog-singele-box " data-aos="fade-down">
+            <div class="blog-thumb">
+              <img src="assets/images/cards/card2.png" alt="blog" class="rounded" />
+              <div class="blog-content">
+
+                <h3 class="blog-title text-light parata-f">
+                  Candid Photography
+                </h3>
+                <p class="blog-desc">
+                  ₹30000 per day
+                </p>
+                <div class="blog-btn">
+                  <a href="" data-bs-toggle="modal"
+                                        data-bs-target="#favouriteIcon">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-meta-title w-100">
+              <h2 class="parata-f text-center"><a href="">Candid Photography</a></h2>
+            </div>
+          </div>
+
+
+          <div class="blog-singele-box" data-aos="fade-down">
+            <div class="blog-thumb">
+              <img src="assets/images/cards/card4.png" alt="blog3" class="rounded" />
+              <div class="blog-content">
+
+                <h3 class="blog-title text-light parata-f">
+                  Pre-Wedding Shoot
+                </h3>
+                <p class="blog-desc">
+                  ₹15000 per day
+                </p>
+                <div class="blog-btn">
+                  <a href="" data-bs-toggle="modal"
+                                        data-bs-target="#favouriteIcon">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-meta-title w-100">
+              <h2 class="parata-f text-center"><a href="">Pre-Wedding Shoot</a></h2>
+            </div>
+          </div>
+
+
+          <div class="blog-singele-box" data-aos="fade-down">
+            <div class="blog-thumb">
+              <img src="assets/images/cards/card4.png" alt="blog3" class="rounded" />
+              <div class="blog-content">
+
+                <h3 class="blog-title text-light parata-f">
+                  Photo + Video
+                </h3>
+                <p class="blog-desc">
+                  ₹ 70,000 per day
+                </p>
+                <div class="blog-btn">
+                  <a href="" data-bs-toggle="modal"
+                                        data-bs-target="#favouriteIcon">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-meta-title w-100">
+              <h2 class="parata-f text-center"><a href="">Photo + Video</a></h2>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Map & Contact -->
+    <section class="ptb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8   col-12">
+
+            <div class="mb-6 border-bottom pb-6 text-center">
+              <!-- map -->
+              <h2 class="mb-1 parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Map</h2>
+              <p class="mb-5">74, Usha Apartments, Manpreet Nagar Jamnagar - 146296</p>
+             <div class="ratio ratio-4x3">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d56033.941662842975!2d77.36852479999999!3d28.6261248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748223491928!5m2!1sen!2sin"
+    style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+            </div>
+
+          </div>
+          <div class="col-lg-4  col-12">
+            <!-- card -->
+            <div class="card mb-4">
+              <div class="card-body p-4" style="background-color: #f7e7ce !important;">
+                <h3 class="mb-3">Message to vendor</h3>
+                <!-- form -->
+                <form class="needs-validation" novalidate>
+                  <!-- name -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="vendorname" placeholder="Write Name" required>
+                    <label for="vendorname" class="form-label">Your Name</label>
+                    <div class="invalid-feedback">
+                      Please enter first name.
+                    </div>
+                  </div>
+                  <!-- email -->
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="vendoremail" placeholder="Email address" required>
+                    <label for="vendoremail" class="form-label">Email</label>
+                    <div class="invalid-feedback">
+                      Please enter email.
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="vendorphone" placeholder="Phone number" required>
+                    <label for="vendorphone" class="form-label">Phone</label>
+                    <div class="invalid-feedback">
+                      Please enter phone number.
+                    </div>
+                  </div>
+                  <!-- wedding date -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control flatpickr" id="selectdate" placeholder="Select vendor">
+                    <label for="selectdate" class="form-label">Wedding Date</label>
+
+                  </div>
+                  <!-- descriptions -->
+                  <div class="form-floating mb-3">
+
+                    <textarea class="form-control" id="floatingTextarea" placeholder="Write your message"
+                      style="height: 100px" required></textarea>
+                    <label for="floatingTextarea" class="form-label">Textarea</label>
+                    <div class="invalid-feedback">
+                      Please enter a message in the textarea.
+                    </div>
+
+                  </div>
+                  <!-- text -->
+                  <div class="mb-3">
+                    <p class="fs-5 lh-2">Byclicking'Request pricing', I agree to RealWed <a href="#">Privacy
+                        Policy</a> and <a href="#">Terms of Use</a></p>
+
+                  </div>
+                  <!-- button -->
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn2 style1">Request Pricing</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </main>
+  <!-- footer -->
+  <!-- footer -->
+  <footer class="pt-12 pb-0">
+
+    <div class="container">
+      <div class="row ">
+        <!-- col -->
+        <div class="col-lg-5 col-md-6 col-12 ">
+          <!-- para -->
+          <div class="mb-4 mb-lg-0 content">
+
+            <a class="navbar-brand fs-2 Cinzel-f" href=" #">
+
+              <span style="color: #f48c06;">Ban</span>Quet
+
+            </a>
+
+
+            <p class="mb-0 mt-4 pe-lg-16 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Discover the most high rated wedding vendors and plan your wedding more
+              better, forever.</p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-6">
+          <!-- list -->
+          <div class="mb-4 mb-lg-0 content__item">
+            <h3 class="mb-3 text-light link link--thebe">Quick Links</h3>
+
+            <ul class="list-unstyled">
+              <li><a href="about.html" class="white text-body text-hover-primary link link--metis">About us</a></li>
+              <li><a href="venues.html" class="white text-body text-hover-primary link link--metis">Venues</a></li>
+              <li><a href="vendors.html" class="white text-body text-hover-primary link link--metis">Venders</a></li>
+              <li><a href="gallery.html" class="white text-body text-hover-primary link link--metis">Gallery</a></li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <!-- contact -->
+          <div class="mb-4 mb-lg-0 content__item">
+            <h3 class="mb-3 text-light link link--thebe">Contact us</h3>
+            <p class="mb-1">Email:<a href="#" class="ms-1 color-white link link--metis">support@example.com</a></p>
+            <p>Phone:<span class="white text-dark fw-semi-bold ms-2 link link--metis">(000)987 654 321 0</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- tiny footer -->
+      <div class="row mt-8 border-top pt-4 align-items-center">
+        <div class="col-md-10 col-12">
+          <div class="d-flex fs-5 ">
+
+            <div>
+              &copy;
+              <span id="copyright"> 2018 -
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+              </span>
+              <span class="parata-f"> &nbsp; Banquet</span>
+            </div>
+            <div class="ms-3">
+              <!-- list -->
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="color-white">PrivacyTerms</a></li>
+                <li class="list-inline-item"><a href="#" class="color-white">Disclaimer</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-2 col-12">
+          <div class="text-md-end lh-1">
+            <!-- list -->
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#" class="text-body text-hover-primary"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-facebook"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                  </svg></a></li>
+              <li class="list-inline-item"><a href="#" class="text-body text-hover-primary"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-twitter"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  </svg></a></li>
+              <li class="list-inline-item"><a href="#" class="text-body text-hover-primary"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+      <!-- modal -->
+    <!-- like listing Modal -->
+<div class="modal fade" id="favouriteIcon" tabindex="-1" aria-labelledby="favouriteIconLabel" aria-hidden="true" style="z-index:9999;">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title mb-0" id="favouriteIconLabel">Message to vendor</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <div class="card mb-4">
+              <div class="card-body p-4" style="background-color: #f7e7ce !important;">
+        
+                <!-- form -->
+                <form class="needs-validation" novalidate>
+                  <!-- name -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="vendorname" placeholder="Write Name" required>
+                    <label for="vendorname" class="form-label">Your Name</label>
+                    <div class="invalid-feedback">
+                      Please enter first name.
+                    </div>
+                  </div>
+                  <!-- email -->
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="vendoremail" placeholder="Email address" required>
+                    <label for="vendoremail" class="form-label">Email</label>
+                    <div class="invalid-feedback">
+                      Please enter email.
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="vendorphone" placeholder="Phone number" required>
+                    <label for="vendorphone" class="form-label">Phone</label>
+                    <div class="invalid-feedback">
+                      Please enter phone number.
+                    </div>
+                  </div>
+                  <!-- wedding date -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control flatpickr" id="selectdate" placeholder="Select vendor">
+                    <label for="selectdate" class="form-label">Wedding Date</label>
+
+                  </div>
+                  <!-- descriptions -->
+                  <div class="form-floating mb-3">
+
+                    <textarea class="form-control" id="floatingTextarea" placeholder="Write your message"
+                      style="height: 100px" required></textarea>
+                    <label for="floatingTextarea" class="form-label">Textarea</label>
+                    <div class="invalid-feedback">
+                      Please enter a message in the textarea.
+                    </div>
+
+                  </div>
+                  <!-- text -->
+                  <div class="mb-3">
+                    <p class="fs-5 lh-2">Byclicking'Request pricing', I agree to RealWed <a href="#">Privacy
+                        Policy</a> and <a href="#">Terms of Use</a></p>
+
+                  </div>
+                  <!-- button -->
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn2 style1">Request Pricing</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- Back to top area start here -->
+  <div class="scroll-up ">
+    <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+    <i class="fa-solid fa-arrow-up" style="color: #3e3c3c;"></i>
+  </div>
+
+
+
+
+  <!-- Libs JS -->
+  <!-- Owl Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <!-- scripts -->
+  <!-- Gsap scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="assets/js/gSap.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+
+
+
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <!-- Anime.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-element.min.js"></script>
+
+
+  <script src="assets/js/vendors/map.js"></script>
+
+  <script>
+    var swiper = new Swiper(".vlogMySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      freeMode: true,
+      loop: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+      },
+      // autoplay: {
+      //   delay: 2000,
+      // },
+    });
+  </script>
+  <script>
+    //Service Slider 
+    $(".service-slider-one").owlCarousel({
+      nav: true,
+      dots: false,
+      loop: true,
+      navText: ['<i class="flaticon-left-arrow-3"></i>', '<i class="flaticon-right-arrow-3"></i>'],
+      margin: 25,
+      items: 1,
+      thumbs: false,
+      smartSpeed: 1300,
+      autoplay: false,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: false,
+      responsiveClass: true,
+      autoHeight: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 2,
+          margin: 20,
+        },
+        1200: {
+          items: 3,
+          margin: 20,
+        }
+      }
+    });
+  </script>
+</body>
+
+
+</html>
