@@ -44,11 +44,17 @@
       <div class="row">
         <div class="col-md-12">
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand Cinzel-f" href="index.html">
+                 <!-- for device -->
+            <a class="navbar-brand Cinzel-f d-none d-sm-block" href="index.html">
+              <!-- Default logo (white version) -->
+              <img src="logo-white-2.png" alt="Logo White" class="logo-default">
 
-              <img src="logo-2.3.png" alt=""  class="d-none d-sm-block">
-              <img src="logo-2.3.png" alt=""  style="height: 65px;" class="d-block d-sm-none">
-              
+              <!-- Scrolled logo (dark version) -->
+              <img src="logo-2.3.png" alt="Logo Black" class="logo-scrolled" style=" display: none;">
+            </a>
+            <!-- for mobile -->
+            <a class="navbar-brand Cinzel-f d-block d-sm-none" href="index.html">
+              <img src="logo-2.3.png" alt="Logo Mobile" class="d-block d-sm-none">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
