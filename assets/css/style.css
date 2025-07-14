@@ -42248,7 +42248,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-transparent .navbar-brand {
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */
   line-height: 1;
   margin: 0;
   padding: 0;
