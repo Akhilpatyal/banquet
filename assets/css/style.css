@@ -50426,3 +50426,22 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 .logo-scrolled {
   display: none;
 }
+
+/* sent logo le aage */
+
+@media (max-width:990px) {
+  .mobile{
+    display: block;
+  }
+   .BigScreen{
+    display: none;
+  }
+}
+@media (min-width:990px) {
+  .BigScreen{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+}
